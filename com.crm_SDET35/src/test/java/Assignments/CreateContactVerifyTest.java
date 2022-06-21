@@ -36,13 +36,7 @@ public class CreateContactVerifyTest extends BaseClass {
 		String text = ele2.getText();
 		assertTrue(text.contains(LastName) );
 		System.out.println("contact is created\"+\"------->\"+\"Test case Pass");
-		//if(text.contains(LastName))
-		//{
-		//	Reporter.log("contact is created"+"------->"+"Test case Pass",true);
-		//}
-		//else
-		//{
-			//Reporter.log("contact is not created"+"------->"+"Test case fail",true);
+		
 		}
 }
 
