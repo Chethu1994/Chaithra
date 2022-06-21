@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.crm.comcast.genericutility.ListImplementClass"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="Assignments.CreateOrganizationsVerifyTest">
+        <methods>
+          <include name="logoutFromApplctn"/>
+          <include name="CreateOrganizationsVerify"/>
+          <include name="dbConfig"/>
+          <include name="loginToApplctn"/>
+          <include name="launchTheBrowser"/>
+          <include name="closeDBconfif"/>
+          <include name="closeTheBrowser"/>
+        </methods>
+      </class> <!-- Assignments.CreateOrganizationsVerifyTest -->
+      <class name="Assignments.CreateProductAndCampaignVerifyTest">
+        <methods>
+          <include name="logoutFromApplctn"/>
+          <include name="dbConfig"/>
+          <include name="loginToApplctn"/>
+          <include name="launchTheBrowser"/>
+          <include name="createProductAndCampaignVerify"/>
+          <include name="closeDBconfif"/>
+          <include name="closeTheBrowser"/>
+        </methods>
+      </class> <!-- Assignments.CreateProductAndCampaignVerifyTest -->
+      <class name="Assignments.CreateContactVerifyTest">
+        <methods>
+          <include name="logoutFromApplctn"/>
+          <include name="createContactVerify"/>
+          <include name="dbConfig"/>
+          <include name="loginToApplctn"/>
+          <include name="launchTheBrowser"/>
+          <include name="closeDBconfif"/>
+          <include name="closeTheBrowser"/>
+        </methods>
+      </class> <!-- Assignments.CreateContactVerifyTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

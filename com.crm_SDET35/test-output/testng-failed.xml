@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="Assignments.CreateProductAndCampaignVerifyTest">
+        <methods>
+          <include name="logoutFromApplctn"/>
+          <include name="closeDBconfig"/>
+          <include name="dbConfig"/>
+          <include name="loginToApplctn"/>
+          <include name="launchTheBrowser"/>
+          <include name="createProductAndCampaignVerify"/>
+          <include name="closeTheBrowser"/>
+        </methods>
+      </class> <!-- Assignments.CreateProductAndCampaignVerifyTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
