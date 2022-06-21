@@ -15,7 +15,7 @@ import com.crm.objectRepository.HomePage;
 public class CreateContactVerifyTest extends BaseClass {
 	@Test(retryAnalyzer = com.crm.comcast.genericutility.RetryImpAnalyser.class)
 	public  void createContactVerify() throws Throwable {
-		//check and verify in github
+	
 		//to get random number
 		int randnum = jLib.getrandomnumber();
 		String FirstName = eLib.ReadDataFromExcelFile("Sheet1", 7, 2)+randnum;
