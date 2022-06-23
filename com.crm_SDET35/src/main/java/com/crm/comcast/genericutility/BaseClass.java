@@ -16,7 +16,7 @@ import com.crm.objectRepository.LoginPage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseClass {
-public static  WebDriver SDriver = null;
+public static  WebDriver SDriver;
 public WebDriver driver;
 public DataBaseUtility dLib= new DataBaseUtility();
 public ExcelUtility eLib= new ExcelUtility();
@@ -57,7 +57,7 @@ public void launchTheBrowser() throws Throwable {
 	//implicitely wait
 	wLib.waitForPageToLoad(driver);
 	//enter the URL of the application
-	driver.get(URL);
+	SDriver.get(URL);
 	//maximize the window
 	driver.manage().window().maximize();
 	
