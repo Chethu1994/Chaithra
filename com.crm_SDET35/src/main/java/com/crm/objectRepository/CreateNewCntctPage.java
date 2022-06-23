@@ -60,7 +60,7 @@ public class CreateNewCntctPage extends WebdriverUtility {
 	{
 		return contactimg;		
 	}
-	public WebElement SaveConsendtact()
+	public WebElement saveContact()
 	{
 		return save;
 	}
