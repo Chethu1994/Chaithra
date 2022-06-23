@@ -35,10 +35,10 @@ public void dbConfig() {
 //@Parameters( "BROWSER")
 @BeforeClass(groups= {"smoke","regression"})
 public void launchTheBrowser() throws Throwable {
-	//String BROWSER = System.getProperty("browser");
-	//String URL = System.getProperty("url");
-	String BROWSER = fLib.getpropertyKeyValue("browser");
-	String URL = fLib.getpropertyKeyValue("url");
+	String BROWSER = System.getProperty("browser");
+	String URL = System.getProperty("url");
+	//String BROWSER = fLib.getpropertyKeyValue("browser");
+	//String URL = fLib.getpropertyKeyValue("url");
 	
 	if(BROWSER.equalsIgnoreCase("chrome"))
 	{
