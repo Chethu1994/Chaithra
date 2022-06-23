@@ -16,7 +16,7 @@ import com.crm.objectRepository.ProductInfoPage;
 import com.crm.objectRepository.ProductsPage;
 
 public class CreateProductAndCampaignVerifyTest extends BaseClass {
-	@Test(groups= "regression")
+	@Test(groups= "regression",retryAnalyzer = com.crm.comcast.genericutility.RetryImpAnalyser.class)
 
 	public void createProductAndCampaignVerify() throws Throwable {
 		
