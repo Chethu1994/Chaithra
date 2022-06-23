@@ -8,18 +8,21 @@ import org.openqa.selenium.support.PageFactory;
 public class ContactPage {
 	//Declaration
 	@FindBy(xpath="//img[@src='themes/softed/images/btnL3Add.gif']")
-	private WebElement createcstmr;
+	private WebElement createcontactlkp;
 	
 	//Initialization
 	public  ContactPage(WebDriver driver)
 	{
 		PageFactory.initElements(driver, this);
 	}
-	
-	
-//Utilization
-	public WebElement createContact()
-	{
-		return createcstmr; 
+
+	public WebElement getCreatecontactlkp() {
+		return createcontactlkp;
 	}
+	
+	public void clickOnCreateContactLkp() {
+		createcontactlkp.click();
+	}
+
+	
 }

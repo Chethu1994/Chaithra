@@ -26,7 +26,7 @@ public class CreateContactVerifyTest extends BaseClass {
 		hpage.clickOnContactsLink();
 		//click on create contact 
 		ContactPage cpage= new ContactPage(driver);
-	    cpage.createContact().click();
+	    cpage.clickOnCreateContactLkp();
 		CreateNewCntctPage cnewpage= new CreateNewCntctPage(driver);
         cnewpage.createContact(FirstName, LastName);
 		ContactInfoPage cinfopage= new ContactInfoPage(driver);
