@@ -3,6 +3,7 @@ package Assignments;
 import static org.testng.Assert.assertTrue;
 
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
@@ -16,7 +17,7 @@ public class CreateContactVerifyTest extends BaseClass {
 	@Test(retryAnalyzer = com.crm.comcast.genericutility.RetryImpAnalyser.class)
 	public  void createContactVerify() throws Throwable {
 	
-		//to get random number for Chethan Kumar Nairy ckn HII BABY
+		//to get random number 
 		int randnum = jLib.getrandomnumber();
 		String FirstName = eLib.ReadDataFromExcelFile("Sheet1", 7, 2)+randnum;
 		String LastName = eLib.ReadDataFromExcelFile("Sheet1", 7, 3)+randnum;
@@ -31,7 +32,7 @@ public class CreateContactVerifyTest extends BaseClass {
         cnewpage.createContact(FirstName, LastName);
 		ContactInfoPage cinfopage= new ContactInfoPage(driver);
         WebElement ele2 = cinfopage.getContactHeaderTxt();
-      //  Assert.fail();
+        Assert.fail();
 		System.out.println(ele2);
 		String text = ele2.getText();
 		assertTrue(text.contains(LastName) );
