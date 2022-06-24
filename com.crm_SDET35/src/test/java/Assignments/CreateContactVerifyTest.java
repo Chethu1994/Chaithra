@@ -32,7 +32,7 @@ public class CreateContactVerifyTest extends BaseClass {
         cnewpage.createContact(FirstName, LastName);
 		ContactInfoPage cinfopage= new ContactInfoPage(driver);
         WebElement ele2 = cinfopage.getContactHeaderTxt();
-        Assert.fail();
+      //  Assert.fail();
 		System.out.println(ele2);
 		String text = ele2.getText();
 		assertTrue(text.contains(LastName) );
