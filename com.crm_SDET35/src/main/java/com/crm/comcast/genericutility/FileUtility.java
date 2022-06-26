@@ -12,7 +12,6 @@ import java.util.Properties;
 
 
 public class FileUtility {
-	FileInputStream fis= null;
 
 /**
  * it used to get common data from property file which you have specified as a argument
@@ -22,8 +21,8 @@ public class FileUtility {
  */
 		public String getpropertyKeyValue(String key) throws Throwable 
 		{
-		 fis = new FileInputStream("./src/test/resources/dxc.properties");
-			Properties prop=new Properties();
+		FileInputStream fis = new FileInputStream("./src/test/resources/dxc.properties");
+		Properties prop=new Properties();
 		prop.load(fis);
 		String value = prop.getProperty(key);
 		return value;
